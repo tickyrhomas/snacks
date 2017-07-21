@@ -5,9 +5,11 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{backgroundColor:'gray'}}>
         <p className="App-intro">
-          Hello World
+          <img className="App-logo" src='andrew_snack.png'/>
+          Coming Soon!
+          <img className="App-logo" src='ricky_snack.png'/>
         </p>
       </div>
     );
