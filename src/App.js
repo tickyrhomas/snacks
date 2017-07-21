@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,6 +8,13 @@ const Title = styled.h1`
   text-align: center;
   color: white;
 `;
+
+
+const keyFramesYa = keyframes`
+  from { transform: rotate(-20deg); }
+  to { transform: rotate(20deg); }
+`;
+
 
 const Container = styled.div`
   background-color: gray;
@@ -18,7 +25,7 @@ const Container = styled.div`
 `;
 
 const SpinningLogo = styled.img`
-  animation: App-logo-spin infinite 20s linear;
+  animation: ${keyFramesYa} infinite 1s linear alternate;
   height: 200px;
 `
 
