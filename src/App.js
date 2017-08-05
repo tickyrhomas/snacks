@@ -21,9 +21,10 @@ const Container = styled.div`
   display: grid;
   height: 100vh;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 10% auto 10%;
+  grid-template-rows: 10% 5px auto 10%;
   grid-template-areas: 
     "header header header header"
+    "mhb mhb mhb mhb"
     "main main main sidebar"
     "footer footer footer sidebar";
   }
@@ -57,6 +58,7 @@ const Header = styled.div`
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-rows: auto;
+  box-shadow: 0px 10px 5px #000000;
 `
 
 const Footer = styled.div`
@@ -84,24 +86,29 @@ const Main = styled.div`
   background-color: #E6E6E6;
 `
 
+const HeaderMainBreak = styled.div`
+  background:red;
+  background: linear-gradient(#B4B4B4, #E6E6E6);
+  grid-area: mhb;
+`
+
 
 class App extends Component {
   render() {
     return (
       <Container>
         <Header>
-        <AvatarHeader>
-          <SpinningLogo1 src='andrew_snack.png'/>
-          <SpinningLogo2 src='ricky_snack.png'/>
-        </AvatarHeader>
-        <HeaderLinks>
-          <Link label="Bio"/>
-          <Link label="Link1"/>
-          <Link label="Link2"/>
-          <Link label="Link3"/>
-          <Link label="Link4"/>
-        </HeaderLinks>
+          <AvatarHeader>
+            <SpinningLogo1 src='andrew_snack.png'/>
+            <SpinningLogo2 src='ricky_snack.png'/>
+          </AvatarHeader>
+          <HeaderLinks>
+            <Link label="Bio"/>
+            <Link label="Contact Us"/>
+            <Link label="Other Projects"/>
+          </HeaderLinks>
         </Header>
+        <HeaderMainBreak/>
         <Main>
           <Card src='andrew_snack.png'>
             <p>Why must they do that. Intently stare at the same spot. Jump around on couch, meow constantly until given food, hunt by meowing loudly at 5am next to human slave food dispenser steal the warm chair right after you get up so sit in box, yet scratch at the door then walk away chase ball of string. Cats go for world domination decide to want nothing to do with my owner today so cat snacks, but warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats stare at the wall, play with food and get confused by dust and kitty poochy for meow loudly just to annoy owners. Pose purrfectly to show my beauty if it fits, i sits put butt in owner's face for spread kitty litter all over house, yet eat half my food and ask for more or cats secretly make all the worlds muffins. Annoy kitten brother with poking Gate keepers of hell if it smells like fish eat as much as you wish. </p>
