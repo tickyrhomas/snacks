@@ -180,11 +180,15 @@ const CardStyle = styled.div`
   align-self: center;
   justify-self: center;
   background-color: #FFFFFF;
-  box-shadow: 7px 7px 5px 5px #D4D4D4;
+  box-shadow: 7px 7px 5px 5px #E1E1E1;
   overflow: scroll;
   > p {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  &:hover {
+    box-shadow: 7px 7px 5px 5px #D4D4D4;
   }
 `
 
@@ -215,11 +219,15 @@ const CardStyle2 = styled.div`
   align-self: center;
   justify-self: center;
   background-color: #FFFFFF;
-  box-shadow: 7px 7px 5px 5px #D4D4D4;
+  box-shadow: 7px 7px 5px 5px #E1E1E1;
   overflow: scroll;
   > p {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  &:hover {
+    box-shadow: 7px 7px 5px 5px #D4D4D4;
   }
 `
 
