@@ -62,7 +62,7 @@ const Header = styled.div`
 `
 
 const Footer = styled.div`
-  background-color: yellow;
+  background-color: #7095B8;
   grid-area: footer;
 `
 
@@ -151,8 +151,16 @@ class App extends Component {
 }
 
 const LinkStyle = styled.a`
-  color:#D00265;
+  text-decoration: none;
+  color: #FFFFFF;
   font-size: 2em;
+  font-weight: 500; 
+  align-self: center;
+  justify-self: center;
+  &:hover {
+    color:#FFFFFF;
+    font-weight: 600; 
+  }
 `
 
 class Link extends Component {
@@ -172,7 +180,7 @@ const CardStyle = styled.div`
   align-self: center;
   justify-self: center;
   background-color: #FFFFFF;
-  box-shadow: 10px 10px 5px 5px #D4D4D4;
+  box-shadow: 7px 7px 5px 5px #D4D4D4;
   overflow: scroll;
   > p {
     margin-left: 10px;
@@ -207,7 +215,7 @@ const CardStyle2 = styled.div`
   align-self: center;
   justify-self: center;
   background-color: #FFFFFF;
-  box-shadow: 10px 10px 5px 5px #D4D4D4;
+  box-shadow: 7px 7px 5px 5px #D4D4D4;
   overflow: scroll;
   > p {
     margin-left: 10px;
