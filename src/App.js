@@ -32,15 +32,13 @@ const Container = styled.div`
 const SpinningLogo1 = styled.img`
   height: 50px;
   align-self: center;
-  grid-column: 4;
-  grid-row:3
+  justify-self: center;
 `
 
 const SpinningLogo2 = styled.img`
   height: 50px;
   align-self: center;
-  grid-column: 1;
-  grid-row:2
+  justify-self: center;
 `
 
 // animation: ${keyFramesYa} infinite 1s linear alternate;
@@ -68,6 +66,8 @@ const Footer = styled.div`
 
 const AvatarHeader = styled.div`
   grid-column:1;
+  display: grid;
+  grid-template-columns: 10% 10%;
 `
 const HeaderLinks = styled.div`
   grid-column: 2 / 8;
@@ -78,9 +78,9 @@ const HeaderLinks = styled.div`
 const Main = styled.div`
   grid-area: main;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 3%;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 3%;
   background-color: #E6E6E6;
 `
 
@@ -88,12 +88,13 @@ const Card = styled.div`
   grid-column: span 1;
   grid-row: span 1;
   height: 90%;
+  max-height: 300px;
   width: 100%;
   align-self: center;
   justify-self: center;
   background-color: #FFFFFF;
   box-shadow: 10px 10px 5px 5px #D4D4D4;
-  overflow: hidden;
+  overflow: scroll;
   > p {
     margin-left: 10px;
     margin-right: 10px;
@@ -119,7 +120,6 @@ class App extends Component {
         </HeaderLinks>
         </Header>
         <Main>
-          
           <Card>
             <p>Why must they do that. Intently stare at the same spot. Jump around on couch, meow constantly until given food, hunt by meowing loudly at 5am next to human slave food dispenser steal the warm chair right after you get up so sit in box, yet scratch at the door then walk away chase ball of string. Cats go for world domination decide to want nothing to do with my owner today so cat snacks, but warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats stare at the wall, play with food and get confused by dust and kitty poochy for meow loudly just to annoy owners. Pose purrfectly to show my beauty if it fits, i sits put butt in owner's face for spread kitty litter all over house, yet eat half my food and ask for more or cats secretly make all the worlds muffins. Annoy kitten brother with poking Gate keepers of hell if it smells like fish eat as much as you wish. </p>
           </Card>
