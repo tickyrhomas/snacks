@@ -74,7 +74,7 @@ const AvatarHeader = styled.div`
 const HeaderLinks = styled.div`
   grid-column: 2 / 8;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
 `
 
 const Main = styled.div`
