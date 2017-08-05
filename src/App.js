@@ -144,7 +144,7 @@ const Container = styled.div`
   grid-template-rows: 10% auto 10%;
   grid-template-areas: 
     "header header header header"
-    "main main main sidebar"
-    "footer footer footer sidebar";
+    "main main main main"
+    "footer footer footer footer";
   }
 `;
